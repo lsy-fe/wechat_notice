@@ -36,13 +36,15 @@ module.exports = {
 
     CITY: '101021300', //女朋友所在城市（城市名称，不要带“市”）
     // 测试用
-    SENDDATE_WEATHER: '0 0 12/1 * * *',
-    SENDDATE_REMIND: '0 0/10 11 * * 1-5', //定时提醒发送时间
-    SENDDATE_MEMORIAL: '0 20/10 11 * * *', //纪念日提醒发送时间
+    // SENDDATE_MORNING_WEATHER: '0 0 13 * * *',
+    // SENDDATE_NIGHT_WEATHER: '0 0 14 * * *',
+    // SENDDATE_REMIND: ['0 0 10 * * 1-5', '0 0 11 * * 1-5', '0 30 13 * * 1-5', '0 30 15 * * 1-5', '0 30 17 * * 1-5'], //定时提醒发送时间
+    // SENDDATE_MEMORIAL: '0 20/10 11 * * *', //纪念日提醒发送时间
     
-    // SENDDATE_WEATHER: '0 30 8/12 * * *', //定时天气发送时间 每天8点30分0秒发送，规则见 /schedule/index.js
-    // SENDDATE_REMIND: '0 30 10-17/2 * * 1-5', //定时提醒发送时间 
-    // SENDDATE_MEMORIAL: '0 0 0 * * *', //纪念日提醒发送时间
+    SENDDATE_MORNING_WEATHER: '0 30 8 * * *',
+    SENDDATE_NIGHT_WEATHER: '0 30 21 * * *',
+    SENDDATE_REMIND: ['0 0 10 * * 1-5', '0 0 11 * * 1-5', '0 30 13 * * 1-5', '0 30 15 * * 1-5', '0 30 17 * * 1-5'], //定时提醒发送时间
+    SENDDATE_MEMORIAL: '0 0 0 * * *', //纪念日提醒发送时间
     TXAPIKEY: '517ebb2e5f946dd9a55a4c3b3584a129', //此处须填写个人申请的天行apikey,请替换成自己的 申请地址https://www.tianapi.com/signup.html?source=474284281
    
     // 高级功能配置项（非必填项）

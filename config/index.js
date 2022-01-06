@@ -36,8 +36,8 @@ module.exports = {
 
     CITY: '101021300', //女朋友所在城市（城市名称，不要带“市”）
     // 测试用
-    SENDDATE_WEATHER: '0 20/10 11 * * *',
-    SENDDATE_REMIND: '0 20/10 11 * * 1-5', //定时提醒发送时间
+    SENDDATE_WEATHER: '0 0 12/1 * * *',
+    SENDDATE_REMIND: '0 0/10 11 * * 1-5', //定时提醒发送时间
     SENDDATE_MEMORIAL: '0 20/10 11 * * *', //纪念日提醒发送时间
     
     // SENDDATE_WEATHER: '0 30 8/12 * * *', //定时天气发送时间 每天8点30分0秒发送，规则见 /schedule/index.js

@@ -36,7 +36,6 @@ async function sendWeatherDay () {
   const confessionDay = untils.getDiffDay('CONFESSION_DAY');
   const willingDay = untils.getDiffDay('WILLING_DAY');
   const husbandDay = untils.getDiffDay('HUSBAND_DAY');
-
   let word = '';
   switch (week) {
     case 1:
@@ -50,6 +49,7 @@ async function sendWeatherDay () {
       break;
     case 5:
     case 7:
+    case 0:
       word = `第一次表白的第${confessionDay}天\n第一次说“我也爱你，我愿意”的第${willingDay}天\n第一次喊老公的第${husbandDay}天`;
       break;
   }

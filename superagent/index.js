@@ -118,7 +118,7 @@ async function getWeather () {
         } else if (wea.includes('晴')) {
             _wea = `${wea} 🌞`
         }
-        let data = `${hour < 12 ? '今' : '明'}日天气 ${_wea}\n平均温度 ${tem}\n最高温度 ${tem1}\n最低温度 ${tem2}\n空气质量 ${air_level}\n`;
+        let data = `${hour < 12 ? '今' : '明'}日天气 ${_wea}\n最高温度 ${tem1}\n最低温度 ${tem2}\n空气质量 ${air_level}\n`;
 
         // 如果是第二天hours[0] 为8时 hours[10] 为18时
         const rains = ['雨', '雪', '冰雹', '雷'];

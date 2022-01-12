@@ -16,7 +16,7 @@ async function sendWeatherDay () {
   console.log('你的贴心小助理开始工作啦！');
   let logMsg;
   let one = await superagent.getOne(); //获取每日一句
-  let weather = await superagent.getNewWeather(); //获取天气信息
+  let weather = await superagent.getWeather(); //获取天气信息
   let today = await untils.formatDate(new Date()); //获取今天的日期
   let week = new Date().getDay();
   let str = '';
